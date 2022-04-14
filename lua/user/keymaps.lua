@@ -10,6 +10,15 @@ keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- 默认的键位设置函数太长了，所以这里将它们重新引用一下
+vim.keybinds = {
+	gmap = vim.api.nvim_set_keymap,
+	bmap = vim.api.nvim_buf_set_keymap,
+	dgmap = vim.api.nvim_del_keymap,
+	dbmap = vim.api.nvim_buf_del_keymap,
+	opts = { noremap = true, silent = true },
+}
+
 -- Modes
 --   normal_mode = "n",
 --   insert_mode = "i",
@@ -60,10 +69,7 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
--- Terminal --
--- Better terminal navigation
--- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
--- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
--- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
--- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
-
+keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
+keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
+keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
+keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
