@@ -17,8 +17,33 @@ lsp_installer.on_server_ready(function(server)
 	end
 
 	if server.name == "sumneko_lua" then
-		local sumneko_opts = require("user.lsp.settings.sumneko_lua")
-		opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
+		local sumneko_lua_opts = require("user.lsp.settings.sumneko_lua")
+		opts = vim.tbl_deep_extend("force", sumneko_lua_opts, opts)
+	end
+
+	if server.name == "cssls" then
+		local cssls_opts = require("user.lsp.settings.cssls")
+		opts = vim.tbl_deep_extend("force", cssls_opts, opts)
+	end
+
+	if server.name == "html" then
+		local html_opts = require("user.lsp.settings.html")
+		opts = vim.tbl_deep_extend("force", html_opts, opts)
+	end
+
+	if server.name == "pyright" then
+		local pyright_opts = require("user.lsp.settings.pyright")
+		opts = vim.tbl_deep_extend("force", pyright_opts, opts)
+	end
+
+	if server.name == "vuels" then
+		local vuels_opts = require("user.lsp.settings.vuels")
+		opts = vim.tbl_deep_extend("force", vuels_opts, opts)
+	end
+
+	if server.name == "tsserver" then
+		local tsserver_opts = require("user.lsp.settings.tsserver")
+    opts = vim.tbl_deep_extend("force", tsserver_opts, opts)
 	end
 
 	-- This setup() function is exactly the same as lspconfig's setup function.
