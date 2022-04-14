@@ -229,6 +229,11 @@ _G.packer_plugins = {
     path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/project.nvim",
     url = "https://github.com/ahmedkhalf/project.nvim"
   },
+  ["switch.vim"] = {
+    loaded = true,
+    path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/switch.vim",
+    url = "https://github.com/AndrewRadev/switch.vim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/telescope.nvim",
