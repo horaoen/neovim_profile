@@ -1,65 +1,28 @@
-# Neovim from scratch
+[toc]
 
-Each video will be associated with a branch so checkout the one you are interested in, you can follow along with this [playlist](https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ).
+# neovim_profile
 
-## Try out this config
+## 使用
 
-Make sure to remove or move your current `nvim` directory
+使用前请先安装 [neovim(version>=6.0)](https://github.com/neovim/neovim)
 
-**IMPORTANT** Requires [Neovim v0.6.0](https://github.com/neovim/neovim/releases/tag/v0.6.0) or [Nightly](https://github.com/neovim/neovim/releases/tag/nightly). 
-```
-git clone https://github.com/LunarVim/Neovim-from-scratch.git ~/.config/nvim
-```
-
-Run `nvim` and wait for the plugins to be installed 
-
-**NOTE** (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim) 
-
-## Get healthy
-
-Open `nvim` and enter the following:
-
-```
-:checkhealth
+```shell
+git https://github.com/horaoen/neovim_profile.git ~/.config/nvim
 ```
 
-You'll probably notice you don't have support for copy/paste also that python and node haven't been setup
+## 如何自定义
 
-So let's fix that
+本仓库配置文件来源于 [neovim from scrath](https://github.com/LunarVim/Neovim-from-scratch), 阅读该教程后有助于您在该配置的基础上扩展。
 
-First we'll fix copy/paste
+## 快捷链接
 
-- On mac `pbcopy` should be builtin
+[neovim插件集](https://github.com/stars/horaoen/lists/neovim)
 
-- On Ubuntu
+[可用的lsp服务](https://github.com/williamboman/nvim-lsp-installer#available-lsps)
 
-  ```
-  sudo apt install xsel
-  ```
+[lsp服务配置](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
 
-- On Arch Linux
+**参考教程**
 
-  ```
-  sudo pacman -S xsel
-  ```
-
-Next we need to install python support (node is optional)
-
-- Neovim python support
-
-  ```
-  pip install pynvim
-  ```
-
-- Neovim node support
-
-  ```
-  npm i -g neovim
-  ```
----
-
-**NOTE** make sure you have [node](https://nodejs.org/en/) installed, I recommend a node manager like [fnm](https://github.com/Schniz/fnm).
-
-> The computing scientist's main challenge is not to get confused by the complexities of his own making. 
-
-\- Edsger W. Dijkstra
+- [askfiy's Neovim IDE搭建教程](https://www.zhihu.com/people/cui-qin-3/posts)
+- [掘金小册 neovim配置实战](https://juejin.cn/book/7051157342770954277)
