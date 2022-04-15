@@ -62,6 +62,7 @@ return packer.startup(function(use)
 	use("AndrewRadev/switch.vim")
 	use("phaazon/hop.nvim")
 	use("ur4ltz/surround.nvim")
+  use("ethanholz/nvim-lastplace")
 
 	-- Colorschemes
 	use("lunarvim/darkplus.nvim")

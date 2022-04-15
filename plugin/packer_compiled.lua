@@ -184,6 +184,11 @@ _G.packer_plugins = {
     path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/nvim-hlslens",
     url = "https://github.com/kevinhwang91/nvim-hlslens"
   },
+  ["nvim-lastplace"] = {
+    loaded = true,
+    path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/nvim-lastplace",
+    url = "https://github.com/ethanholz/nvim-lastplace"
+  },
   ["nvim-lsp-installer"] = {
     loaded = true,
     path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
