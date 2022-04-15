@@ -63,6 +63,7 @@ return packer.startup(function(use)
 	use("phaazon/hop.nvim")
 	use("ur4ltz/surround.nvim")
   use("ethanholz/nvim-lastplace")
+  use("rmagatti/auto-session")
 
 	-- Colorschemes
 	use("lunarvim/darkplus.nvim")
