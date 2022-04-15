@@ -43,7 +43,6 @@ return packer.startup(function(use)
 	-- My plugins here
 	use("wbthomason/packer.nvim") -- Have packer manage itself
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
-	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
 	use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
 	use("numToStr/Comment.nvim") -- Easily comment stuff
 	use("kyazdani42/nvim-web-devicons")
@@ -62,8 +61,15 @@ return packer.startup(function(use)
 	use("AndrewRadev/switch.vim")
 	use("phaazon/hop.nvim")
 	use("ur4ltz/surround.nvim")
-  use("ethanholz/nvim-lastplace")
-  use("rmagatti/auto-session")
+	use("ethanholz/nvim-lastplace")
+	use("rmagatti/auto-session")
+	use({
+		"nvim-pack/nvim-spectre",
+		requires = {
+			"nvim-lua/plenary.nvim", -- Lua 开发模块
+			"BurntSushi/ripgrep", -- 文字查找
+		},
+	})
 
 	-- Colorschemes
 	use("lunarvim/darkplus.nvim")

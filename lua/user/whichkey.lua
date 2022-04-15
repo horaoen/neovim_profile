@@ -159,6 +159,14 @@ local mappings = {
 			"Workspace Symbols",
 		},
 	},
+
+  r = {
+    name = "Replace",
+    p = {"<cmd>lua require('spectre').open()<CR>", "Global Replace"},
+    f = {"viw:lua require('spectre').open_file_search()<CR>", "Current File Replace"},
+    w = {"<cmd>lua require('spectre').open_visual({select_word=true})<CR>", "Replace Current Word"},
+  },
+
 	s = {
 		name = "Search",
 		b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
