@@ -3,6 +3,6 @@ if not status_ok then
 	return
 end
 
-require("lsp.lsp-installer")
-require("lsp.null-ls")
-require("lsp.lsp-config")
+_ = require("lsp.lsp-installer")
+_ = require("lsp.null-ls")
+_ = require("lsp.lsp-config")
