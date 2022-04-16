@@ -70,6 +70,8 @@ return packer.startup(function(use)
 			"BurntSushi/ripgrep", -- 文字查找
 		},
 	})
+	use("rcarriga/nvim-notify")
+	use("Pocco81/AutoSave.nvim")
 
 	-- Colorschemes
 	use("lunarvim/darkplus.nvim")

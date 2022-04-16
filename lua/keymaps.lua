@@ -74,9 +74,10 @@ keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
--- 插件快捷键
+-- pugin keymap
 local pluginKeys = {}
 
+-- lsp
 pluginKeys.mapLSP = function(mapbuf)
 	mapbuf("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", opts)
 	mapbuf("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts)
@@ -89,7 +90,7 @@ pluginKeys.mapLSP = function(mapbuf)
 	mapbuf("n", "gk", "<cmd>Lspsaga diagnostic_jump_prev<cr>", opts)
 end
 
--- typescript 快捷键
+-- typescript
 pluginKeys.mapTsLSP = function(mapbuf)
 	mapbuf("n", "gs", ":TSLspOrganize<CR>", opts)
 	mapbuf("n", "gr", ":TSLspRenameFile<CR>", opts)
