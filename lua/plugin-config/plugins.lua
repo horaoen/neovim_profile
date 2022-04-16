@@ -72,6 +72,8 @@ return packer.startup(function(use)
 	})
 	use("rcarriga/nvim-notify")
 	use("Pocco81/AutoSave.nvim")
+	use("norcalli/nvim-colorizer.lua")
+	use("mbbill/undotree")
 
 	-- Colorschemes
 	use("lunarvim/darkplus.nvim")

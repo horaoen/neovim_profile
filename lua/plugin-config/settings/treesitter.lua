@@ -13,6 +13,7 @@ configs.setup({
 		"vue",
 		"javascript",
 		"typescript",
+		"scss",
 		"css",
 		"c",
 		"c_sharp",
