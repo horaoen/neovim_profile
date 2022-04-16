@@ -19,13 +19,13 @@ vim.keybinds = {
 	opts = { noremap = true, silent = true },
 }
 
--- Modes
---   normal_mode = "n",
---   insert_mode = "i",
---   visual_mode = "v",
---   visual_block_mode = "x",
---   term_mode = "t",
---   command_mode = "c",
+-- Edit
+keymap("n", "<leader>q", "<cmd>wq<cr>", opts)
+keymap("n", "<leader>Q", "<cmd>wqa<cr>", opts)
+keymap("n", "<leader>w", "<cmd>w<cr>", opts)
+keymap("i", "<leader>q", "<cmd>wq<cr>", opts)
+keymap("i", "<leader>Q", "<cmd>wqa<cr>", opts)
+keymap("i", "<leader>w", "<cmd>w<cr>", opts)
 
 -- Normal --
 -- Better window navigation
@@ -76,6 +76,18 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- pugin keymap
 local pluginKeys = {}
+
+-- telescope
+keymap(
+	"n",
+	"<leader>f",
+	"<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
+	opts
+)
+keymap("n", "<leader>F", "<cmd>Telescope live_grep theme=ivy<cr>", opts)
+
+-- nvim-tree
+keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts)
 
 -- lsp
 pluginKeys.mapLSP = function(mapbuf)

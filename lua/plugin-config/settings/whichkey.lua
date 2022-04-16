@@ -84,17 +84,8 @@ local mappings = {
 		"<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
 		"Buffers",
 	},
-	["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-	["w"] = { "<cmd>w!<CR>", "Save" },
-	["q"] = { "<cmd>q!<CR>", "Quit" },
 	["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
 	["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
-	["f"] = {
-		"<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-		"Find files",
-	},
-	["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
-	["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
 
 	p = {
 		name = "Packer",
@@ -160,12 +151,12 @@ local mappings = {
 		},
 	},
 
-  r = {
-    name = "Replace",
-    p = {"<cmd>lua require('spectre').open()<CR>", "Global Replace"},
-    f = {"viw:lua require('spectre').open_file_search()<CR>", "Current File Replace"},
-    w = {"<cmd>lua require('spectre').open_visual({select_word=true})<CR>", "Replace Current Word"},
-  },
+	r = {
+		name = "Replace",
+		p = { "<cmd>lua require('spectre').open()<CR>", "Global Replace" },
+		f = { "viw:lua require('spectre').open_file_search()<CR>", "Current File Replace" },
+		w = { "<cmd>lua require('spectre').open_visual({select_word=true})<CR>", "Replace Current Word" },
+	},
 
 	s = {
 		name = "Search",
@@ -191,9 +182,9 @@ local mappings = {
 	},
 	m = {
 		name = "motion",
-		w = { "<cmd>HopWord<CR>", "HopWord"},
-		l = { "<cmd>HopLine<CR>", "HopLine"},
-		c = { "<cmd>HopChar1<CR>", "HopChar"},
+		w = { "<cmd>HopWord<CR>", "HopWord" },
+		l = { "<cmd>HopLine<CR>", "HopLine" },
+		c = { "<cmd>HopChar1<CR>", "HopChar" },
 	},
 }
 
