@@ -77,7 +77,37 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 -- pugin keymap
 local pluginKeys = {}
 
--- telescope
+-- nvim-tree
+pluginKeys.nvimtreeList = {
+	{ key = { "<CR>", "o", "<2-LeftMouse>" }, action = "edit" },
+	-- 分屏打开文件
+	{ key = "v", action = "vsplit" },
+	-- 显示隐藏文件
+	{ key = "h", action = "split" },
+	-- Ignore (node_modules)
+	{ key = "i", action = "toggle_ignored" },
+	-- Hide (dotfiles)
+	{ key = ".", action = "toggle_dotfiles" },
+	-- 文件操作
+	{ key = "<F5>", action = "refresh" },
+	{ key = "a", action = "create" },
+	{ key = "d", action = "remove" },
+	{ key = "r", action = "rename" },
+	{ key = "x", action = "cut" },
+	{ key = "c", action = "copy" },
+	{ key = "p", action = "paste" },
+	-- 进入下一级
+	{ key = { "]" }, action = "cd" },
+	-- 进入上一级
+	{ key = { "[" }, action = "dir_up" },
+	-- mac
+	{ key = "s", action = "open" },
+}
+
+-- nvim-bbye
+keymap("n", "<leader>c", "<cmd>Bdelete<cr>", opts)
+
+--telescope
 keymap(
 	"n",
 	"<leader>f",
@@ -107,6 +137,7 @@ pluginKeys.mapLSP = function(mapbuf)
 	mapbuf("n", "gp", "<cmd>Lspsaga show_line_diagnostics<CR>", opts)
 	mapbuf("n", "gj", "<cmd>Lspsaga diagnostic_jump_next<cr>", opts)
 	mapbuf("n", "gk", "<cmd>Lspsaga diagnostic_jump_prev<cr>", opts)
+	mapbuf("n", "<leader>lf", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 end
 
 -- typescript
@@ -116,4 +147,23 @@ pluginKeys.mapTsLSP = function(mapbuf)
 	mapbuf("n", "gi", ":TSLspImportAll<CR>", opts)
 end
 
+-- cmp
+pluginKeys.cmp = function(cmp)
+	return {
+
+		["<A-.>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
+		["<A-,>"] = cmp.mapping({
+			i = cmp.mapping.abort(),
+			c = cmp.mapping.close(),
+		}),
+		["<C-k>"] = cmp.mapping.select_prev_item(),
+		["<C-j>"] = cmp.mapping.select_next_item(),
+		["<CR>"] = cmp.mapping.confirm({
+			select = true,
+			behavior = cmp.ConfirmBehavior.Replace,
+		}),
+		["<C-u>"] = cmp.mapping(cmp.mapping.scroll_docs(-4), { "i", "c" }),
+		["<C-d>"] = cmp.mapping(cmp.mapping.scroll_docs(4), { "i", "c" }),
+	}
+end
 return pluginKeys

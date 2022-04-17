@@ -40,8 +40,6 @@ local opts = {
 		end
 		-- 绑定快捷键
 		require("keymaps").mapLSP(buf_set_keymap)
-		-- 保存时自动格式化
-		vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
 	end,
 }
 

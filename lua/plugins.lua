@@ -71,27 +71,28 @@ return packer.startup(function(use)
 	use("folke/tokyonight.nvim")
 	use({ "catppuccin/nvim", as = "catppuccin" })
 
-	-- cmp plugins
-	use("hrsh7th/nvim-cmp")
-	use("hrsh7th/cmp-buffer") -- buffer completions
-	use("hrsh7th/cmp-path") -- path completions
-	use("hrsh7th/cmp-cmdline") -- cmdline completions
-	use("saadparwaiz1/cmp_luasnip") -- snippet completions
-	use("hrsh7th/cmp-nvim-lsp")
-
-	-- snippets
-	use("L3MON4D3/LuaSnip") --snippet engine
-	use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
-
 	-- LSP
 	use("neovim/nvim-lspconfig") -- enable LSP
 	use("williamboman/nvim-lsp-installer") -- simple to use language server installer
 	use("tamago324/nlsp-settings.nvim") -- language server settings defined in json for
 	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
-	use("tami5/lspsaga.nvim")
 	use("j-hui/fidget.nvim")
 	use("b0o/schemastore.nvim")
 	use("jose-elias-alvarez/nvim-lsp-ts-utils")
+	-- lsp ui
+	use("onsails/lspkind-nvim")
+	use("tami5/lspsaga.nvim")
+	-- cmp
+	use("hrsh7th/nvim-cmp")
+	use("hrsh7th/vim-vsnip")
+
+	use("hrsh7th/cmp-buffer") -- buffer completions
+	use("hrsh7th/cmp-path") -- path completions
+	use("hrsh7th/cmp-cmdline") -- cmdline completions
+	use("hrsh7th/cmp-nvim-lsp")
+	use("hrsh7th/cmp-vsnip")
+
+	use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
 
 	-- dap
 	use("mfussenegger/nvim-dap")
