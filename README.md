@@ -7,7 +7,7 @@
 使用前请先安装 [neovim(version>=6.0)](https://github.com/neovim/neovim)
 
 ```shell
-git https://github.com/horaoen/neovim_profile.git ~/.config/nvim
+git clone https://github.com/horaoen/neovim_profile.git ~/.config/nvim
 ```
 
 ## 如何自定义
