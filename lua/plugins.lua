@@ -65,6 +65,7 @@ return packer.startup(function(use)
 	use("Pocco81/AutoSave.nvim")
 	use("norcalli/nvim-colorizer.lua")
 	use("mbbill/undotree")
+  use("stevearc/aerial.nvim")
 
 	-- Colorschemes
 	use("lunarvim/darkplus.nvim")
@@ -105,10 +106,18 @@ return packer.startup(function(use)
 	-- Treesitter
 	use({
 		"nvim-treesitter/nvim-treesitter",
-		run = ":TSUpdate",
+		run = { ":TSupdate" },
+		requires = {
+			"p00f/nvim-ts-rainbow",
+		},
 	})
-	use("JoosepAlviste/nvim-ts-context-commentstring")
-
+	use({
+		"numToStr/Comment.nvim",
+    tag = "v0.6",
+		requires = {
+			"JoosepAlviste/nvim-ts-context-commentstring",
+		},
+	})
 	-- Git
 	use("lewis6991/gitsigns.nvim")
 

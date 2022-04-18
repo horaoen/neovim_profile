@@ -12,6 +12,7 @@ local servers = {
 	jsonls = require("lsp-config.settings.jsonls"),
 	tsserver = require("lsp-config.settings.tsserver"),
 	vuels = require("lsp-config.settings.vuels"),
+  pyright = require("lsp-config.settings.pyright"),
 }
 -- 自动安装 Language Servers
 for name, _ in pairs(servers) do

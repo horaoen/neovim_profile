@@ -45,8 +45,12 @@ configs.setup({
 			scope_incremental = "<TAB>",
 		},
 	},
+	rainbow = {
+		enable = true,
+		extended_mode = true,
+	},
 })
 -- 开启 Folding 模块
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 99
