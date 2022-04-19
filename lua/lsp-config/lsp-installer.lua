@@ -13,8 +13,8 @@ local servers = {
 	tsserver = require("lsp-config.settings.tsserver"),
 	vuels = require("lsp-config.settings.vuels"),
 	pyright = require("lsp-config.settings.pyright"),
-  charp_ls = require("lsp-config.settings.csharp_ls"),
-	-- rust_analyzer = require("lsp-config.settings.rust_analyzer"),
+  csharp_ls = require("lsp-config.settings.csharp_ls"),
+	rust_analyzer = require("lsp-config.settings.rust_analyzer"),
 }
 -- 自动安装 Language Servers
 for name, _ in pairs(servers) do

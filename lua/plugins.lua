@@ -95,6 +95,7 @@ return packer.startup(function(use)
 
 	use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
 
+  use("simrat39/rust-tools.nvim")
 	-- dap
 	use("mfussenegger/nvim-dap")
 	use("theHamsta/nvim-dap-virtual-text")
