@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
     url = "https://github.com/antoinemadec/FixCursorHold.nvim"
   },
-  ["aerial.nvim"] = {
-    loaded = true,
-    path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/aerial.nvim",
-    url = "https://github.com/stevearc/aerial.nvim"
-  },
   ["alpha-nvim"] = {
     loaded = true,
     path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/alpha-nvim",
@@ -309,6 +304,11 @@ _G.packer_plugins = {
     path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/ripgrep",
     url = "https://github.com/BurntSushi/ripgrep"
   },
+  ["rust-tools.nvim"] = {
+    loaded = true,
+    path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
+    url = "https://github.com/simrat39/rust-tools.nvim"
+  },
   ["schemastore.nvim"] = {
     loaded = true,
     path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/schemastore.nvim",
@@ -323,6 +323,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/switch.vim",
     url = "https://github.com/AndrewRadev/switch.vim"
+  },
+  ["symbols-outline.nvim"] = {
+    loaded = true,
+    path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim",
+    url = "https://github.com/simrat39/symbols-outline.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

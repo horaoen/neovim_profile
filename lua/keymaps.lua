@@ -104,6 +104,16 @@ pluginKeys.nvimtreeList = {
 	{ key = "s", action = "open" },
 }
 
+pluginKeys.SymbolList = {
+	close = { "<Esc>", "q" },
+	goto_location = "<Cr>",
+	focus_location = "o",
+	hover_symbol = "<leader>hs",
+	toggle_preview = "P",
+	rename_symbol = "r",
+	code_actions = "a",
+}
+
 -- nvim-bbye
 keymap("n", "<leader>c", "<cmd>Bdelete<cr>", opts)
 
@@ -147,30 +157,18 @@ pluginKeys.mapTsLSP = function(mapbuf)
 	mapbuf("n", "gi", ":TSLspImportAll<CR>", opts)
 end
 
--- aerial
-pluginKeys.mapAerial = function(bufnr)
-	-- 打开、关闭大纲预览
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>1", "<cmd>AerialToggle!<CR>", {})
-	-- 移动到上一个/下一个子项目，同 <C-k> 和 <C-j>
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "{", "<cmd>AerialPrev<CR>", {})
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "}", "<cmd>AerialNext<CR>", {})
-	-- 移动到上一个/下一个大项目
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "[[", "<cmd>AerialPrevUp<CR>", {})
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "]]", "<cmd>AerialNextUp<CR>", {})
-end
-
 -- comment
 pluginKeys.comment = {
-  -- Normal 模式快捷键
-  toggler = {
-    line = "gcc", -- 行注释
-    block = "gbc", -- 块注释
-  },
-  -- Visual 模式
-  opleader = {
-    line = "gc",
-    bock = "gb",
-  },
+	-- Normal 模式快捷键
+	toggler = {
+		line = "gcc", -- 行注释
+		block = "gbc", -- 块注释
+	},
+	-- Visual 模式
+	opleader = {
+		line = "gc",
+		bock = "gb",
+	},
 }
 -- cmp
 pluginKeys.cmp = function(cmp)

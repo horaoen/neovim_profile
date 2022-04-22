@@ -30,13 +30,11 @@ packer.init({
 	},
 })
 
--- Install your plugins here
 return packer.startup(function(use)
-	-- My plugins here
-	use("wbthomason/packer.nvim") -- Have packer manage itself
-	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
-	use("nvim-lua/plenary.nvim") -- basic dependency
-	use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
+	use("wbthomason/packer.nvim")
+	use("nvim-lua/popup.nvim")
+	use("nvim-lua/plenary.nvim")
+	use("windwp/nvim-autopairs")
 	use("kyazdani42/nvim-web-devicons")
 	use("kyazdani42/nvim-tree.lua")
 	use("akinsho/bufferline.nvim")
@@ -47,12 +45,11 @@ return packer.startup(function(use)
 	use("lewis6991/impatient.nvim")
 	use("lukas-reineke/indent-blankline.nvim")
 	use("goolord/alpha-nvim")
-	use("antoinemadec/FixCursorHold.nvim") -- This is needed to fix lsp doc highlight
 	use("folke/which-key.nvim")
 	use("kevinhwang91/nvim-hlslens")
 	use("AndrewRadev/switch.vim")
-	use("phaazon/hop.nvim")
 	use("ur4ltz/surround.nvim")
+	use("phaazon/hop.nvim")
 	use("ethanholz/nvim-lastplace")
 	use("rmagatti/auto-session")
 	use({
@@ -65,37 +62,36 @@ return packer.startup(function(use)
 	use("Pocco81/AutoSave.nvim")
 	use("norcalli/nvim-colorizer.lua")
 	use("mbbill/undotree")
-  use("stevearc/aerial.nvim")
+	use("simrat39/symbols-outline.nvim")
 
-	-- Colorschemes
-	use("lunarvim/darkplus.nvim")
-	use("folke/tokyonight.nvim")
 	use({ "catppuccin/nvim", as = "catppuccin" })
 
 	-- LSP
-	use("neovim/nvim-lspconfig") -- enable LSP
-	use("williamboman/nvim-lsp-installer") -- simple to use language server installer
-	use("tamago324/nlsp-settings.nvim") -- language server settings defined in json for
-	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
+	use("neovim/nvim-lspconfig")
+	use("williamboman/nvim-lsp-installer")
+	use("tamago324/nlsp-settings.nvim")
+	use("jose-elias-alvarez/null-ls.nvim")
 	use("j-hui/fidget.nvim")
 	use("b0o/schemastore.nvim")
 	use("jose-elias-alvarez/nvim-lsp-ts-utils")
+
 	-- lsp ui
 	use("onsails/lspkind-nvim")
 	use("tami5/lspsaga.nvim")
+
 	-- cmp
 	use("hrsh7th/nvim-cmp")
 	use("hrsh7th/vim-vsnip")
 
-	use("hrsh7th/cmp-buffer") -- buffer completions
-	use("hrsh7th/cmp-path") -- path completions
-	use("hrsh7th/cmp-cmdline") -- cmdline completions
+	use("hrsh7th/cmp-buffer")
+	use("hrsh7th/cmp-path")
+	use("hrsh7th/cmp-cmdline")
 	use("hrsh7th/cmp-nvim-lsp")
 	use("hrsh7th/cmp-vsnip")
 
 	use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
 
-  use("simrat39/rust-tools.nvim")
+	use("simrat39/rust-tools.nvim")
 	-- dap
 	use("mfussenegger/nvim-dap")
 	use("theHamsta/nvim-dap-virtual-text")
@@ -114,7 +110,6 @@ return packer.startup(function(use)
 	})
 	use({
 		"numToStr/Comment.nvim",
-    tag = "v0.6",
 		requires = {
 			"JoosepAlviste/nvim-ts-context-commentstring",
 		},
