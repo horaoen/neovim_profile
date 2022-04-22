@@ -159,7 +159,7 @@ pluginKeys.mapAerial = function(bufnr)
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "]]", "<cmd>AerialNextUp<CR>", {})
 end
 
--- comment 
+-- comment
 pluginKeys.comment = {
   -- Normal 模式快捷键
   toggler = {
