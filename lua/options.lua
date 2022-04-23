@@ -36,6 +36,7 @@ local options = {
 }
 
 vim.opt.shortmess:append "c"
+vim.o.filetype = "plugin"
 
 for k, v in pairs(options) do
   vim.opt[k] = v

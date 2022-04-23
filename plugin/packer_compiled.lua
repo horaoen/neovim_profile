@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
-  ["FixCursorHold.nvim"] = {
-    loaded = true,
-    path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
-    url = "https://github.com/antoinemadec/FixCursorHold.nvim"
-  },
   ["alpha-nvim"] = {
     loaded = true,
     path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/alpha-nvim",
@@ -128,11 +123,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
-  },
-  ["darkplus.nvim"] = {
-    loaded = true,
-    path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
-    url = "https://github.com/lunarvim/darkplus.nvim"
   },
   ["fidget.nvim"] = {
     loaded = true,
@@ -338,11 +328,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
-  },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/home/horaoen/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
   },
   undotree = {
     loaded = true,
