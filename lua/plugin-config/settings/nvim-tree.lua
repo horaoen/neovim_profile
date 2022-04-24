@@ -40,11 +40,6 @@ nvim_tree.setup({
 	auto_close = true,
 	open_on_tab = false,
 	hijack_cursor = false,
-	update_cwd = true,
-	update_to_buf_dir = {
-		enable = true,
-		auto_open = true,
-	},
 	diagnostics = {
 		enable = true,
 		icons = {
@@ -72,6 +67,12 @@ nvim_tree.setup({
 		ignore = true,
 		timeout = 500,
 	},
+	actions = {
+		open_file = {
+			resize_window = true,
+			quit_on_open = true,
+		},
+	},
 	view = {
 		width = 30,
 		height = 30,
@@ -89,7 +90,6 @@ nvim_tree.setup({
 		cmd = "trash",
 		require_confirm = true,
 	},
-	quit_on_open = 0,
 	git_hl = 1,
 	disable_window_picker = 0,
 	root_folder_modifier = ":t",
