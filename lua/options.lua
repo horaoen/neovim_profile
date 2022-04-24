@@ -37,7 +37,7 @@ local options = {
 
 vim.opt.shortmess:append "c"
 vim.o.filetype = "plugin"
-
+vim.o.shell = "zsh"
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
