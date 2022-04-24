@@ -33,11 +33,11 @@ local options = {
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
+  shell = "zsh",
+  filetype = "plugin",
 }
 
 vim.opt.shortmess:append "c"
-vim.o.filetype = "plugin"
-vim.o.shell = "zsh"
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
