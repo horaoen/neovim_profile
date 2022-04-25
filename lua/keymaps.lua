@@ -165,6 +165,23 @@ pluginKeys.mapLSP = function(mapbuf)
 	mapbuf("n", "<leader>lf", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
 end
 
+-- nvim-dap
+pluginKeys.mapDAP = function()
+	keymap("n", "<leader>du", "<cmd>lua require'dapui'.toggle()<CR>", opts)
+	keymap("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<CR>", opts)
+	keymap("n", "<F5>", "<cmd>lua require'dap'.continue()<CR>", opts)
+	keymap("n", "<F6>", "<cmd>lua require'dap'.step_into()<CR>", opts)
+	keymap("n", "<F7>", "<cmd>lua require'dap'.step_over()<CR>", opts)
+	keymap("n", "<F8>", "<cmd>lua require'dap'.step_out()<CR>", opts)
+	keymap("n", "<F9>", "<cmd>lua require'dap'.run_last()<CR>", opts)
+	keymap(
+		"n",
+		"<F10>",
+		"<cmd>lua require'dap'.close()<CR><cmd>lua require'dap.repl'.close()<CR><cmd>lua require'dapui'.close()<CR><cmd>DapVirtualTextForceRefresh<CR>",
+		opts
+	)
+end
+
 -- typescript
 pluginKeys.mapTsLSP = function(mapbuf)
 	mapbuf("n", "gs", ":TSLspOrganize<CR>", opts)
@@ -185,6 +202,7 @@ pluginKeys.comment = {
 		bock = "gb",
 	},
 }
+
 -- cmp
 pluginKeys.cmp = function(cmp)
 	return {

@@ -74,6 +74,7 @@ return packer.startup(function(use)
 	use("j-hui/fidget.nvim")
 	use("b0o/schemastore.nvim")
 	use("jose-elias-alvarez/nvim-lsp-ts-utils")
+	use("simrat39/rust-tools.nvim")
 
 	-- lsp ui
 	use("onsails/lspkind-nvim")
@@ -91,7 +92,6 @@ return packer.startup(function(use)
 
 	use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
 
-	use("simrat39/rust-tools.nvim")
 	-- dap
 	use("mfussenegger/nvim-dap")
 	use("theHamsta/nvim-dap-virtual-text")
@@ -117,7 +117,7 @@ return packer.startup(function(use)
 	-- Git
 	use("lewis6991/gitsigns.nvim")
 
-  use("petertriho/nvim-scrollbar")
+	use("petertriho/nvim-scrollbar")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
