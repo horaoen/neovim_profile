@@ -34,7 +34,6 @@ nvim_tree.setup({
 		"dashboard",
 		"alpha",
 	},
-	auto_close = true,
 	open_on_tab = false,
 	update_cwd = true,
 	diagnostics = {
@@ -84,14 +83,5 @@ nvim_tree.setup({
 	trash = {
 		cmd = "trash",
 		require_confirm = true,
-	},
-	disable_window_picker = 0,
-	root_folder_modifier = ":t",
-	show_icons = {
-		git = 1,
-		folders = 1,
-		files = 1,
-		folder_arrows = 1,
-		tree_width = 30,
 	},
 })

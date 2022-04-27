@@ -1,5 +1,3 @@
-[toc]
-
 # neovim_profile
 
 ## 使用
