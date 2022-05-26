@@ -162,7 +162,7 @@ pluginKeys.mapLSP = function(mapbuf)
 	mapbuf("n", "gp", "<cmd>Lspsaga show_line_diagnostics<CR>", opts)
 	mapbuf("n", "gj", "<cmd>Lspsaga diagnostic_jump_next<cr>", opts)
 	mapbuf("n", "gk", "<cmd>Lspsaga diagnostic_jump_prev<cr>", opts)
-	mapbuf("n", "<leader>lf", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
+	mapbuf("n", "<leader>lf", "<cmd>lua vim.lsp.buf.format { async = true }<CR>", opts)
 end
 
 -- nvim-dap
