@@ -143,6 +143,7 @@ keymap("n", "<leader>F", "<cmd>Telescope live_grep theme=ivy<cr>", opts)
 
 -- nvim-tree
 keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>ff", "<cmd>NvimTreeFindFile<CR>", opts)
 
 -- packer
 keymap("n", "<leader>pc", "<cmd>PackerCompile<cr>", opts)
