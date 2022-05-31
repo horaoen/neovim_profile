@@ -20,8 +20,8 @@ vim.keybinds = {
 }
 
 -- Edit
-keymap("n", "<leader>q", "<cmd>wq<cr>", opts)
-keymap("n", "<leader>Q", "<cmd>wqa<cr>", opts)
+keymap("n", "<leader>q", "<cmd>q<cr>", opts)
+keymap("n", "<leader>Q", "<cmd>qa<cr>", opts)
 keymap("n", "<leader>w", "<cmd>w<cr>", opts)
 keymap("i", "<leader>q", "<cmd>wq<cr>", opts)
 keymap("i", "<leader>Q", "<cmd>wqa<cr>", opts)
