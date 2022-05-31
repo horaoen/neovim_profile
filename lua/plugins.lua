@@ -75,6 +75,7 @@ return packer.startup(function(use)
 	use("b0o/schemastore.nvim")
 	use("jose-elias-alvarez/nvim-lsp-ts-utils")
 	use("simrat39/rust-tools.nvim")
+  use("windwp/nvim-ts-autotag")
 
 	-- lsp ui
 	use("onsails/lspkind-nvim")
