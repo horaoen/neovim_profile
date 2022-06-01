@@ -15,14 +15,15 @@ local servers = {
 	pyright = require("lsp-config.settings.pyright"),
 	rust_analyzer = require("lsp-config.settings.rust_analyzer"),
   omnisharp = require("lsp-config.settings.omnisharp"),
+  prosemd_lsp = require("lsp-config.settings.prosemd_lsp"),
 }
 -- 自动安装 Language Servers
 for name, _ in pairs(servers) do
 	local server_is_found, server = lsp_installer.get_server(name)
 	if server_is_found then
 		if not server:is_installed() then
-			print("Installing " .. name)
-			server:install()
+      vim.notify("Installing " .. name)
+      server:install()
 		end
 	end
 end

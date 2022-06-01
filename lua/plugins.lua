@@ -63,6 +63,7 @@ return packer.startup(function(use)
 	use("norcalli/nvim-colorizer.lua")
 	use("mbbill/undotree")
 	use("simrat39/symbols-outline.nvim")
+  use("davidgranstrom/nvim-markdown-preview")
 
 	use({ "catppuccin/nvim", as = "catppuccin" })
 
