@@ -10,7 +10,7 @@ cmp.setup({
 		end,
 	},
 	mapping = require("keymaps").cmp(cmp),
-	formatting = require("lsp-config.ui").formatting,
+	formatting = require("lsp.ui").formatting,
 	sources = cmp.config.sources({
 		{ name = "nvim_lsp" },
 		{ name = "vsnip" },

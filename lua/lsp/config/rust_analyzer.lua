@@ -17,7 +17,7 @@ return {
   on_setup = function(server)
     require("rust-tools").setup({
       server = vim.tbl_deep_extend("force", server:get_default_options(), opts),
-      dap = require("dap-config.settings.rust")
+      dap = require("dap.config.rust")
     })
     server:attach_buffers()
     require("rust-tools").start_standalone_if_required()
