@@ -24,12 +24,3 @@ git clone https://github.com/horaoen/neovim_profile.git ~/.config/nvim
 
 - [askfiy's Neovim IDE搭建教程](https://www.zhihu.com/people/cui-qin-3/posts)
 - [掘金小册 neovim配置实战](https://juejin.cn/book/7051157342770954277)
-# sss
--aaa
-  - blob
-  - aaa
-  - BEERWARE
-### abc
-  - [afa]()
-
-  

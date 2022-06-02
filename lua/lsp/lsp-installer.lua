@@ -15,7 +15,6 @@ local servers = {
   pyright = require("lsp.config.pyright"),
   rust_analyzer = require("lsp.config.rust_analyzer"),
   omnisharp = require("lsp.config.omnisharp"),
-  prosemd_lsp = require("lsp.config.prosemd_lsp"),
 }
 -- 自动安装 Language Servers
 for name, _ in pairs(servers) do
