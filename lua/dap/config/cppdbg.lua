@@ -3,7 +3,7 @@ local dap = require("dap")
 dap.adapters.cppdbg = {
 	id = "cppdbg",
 	type = "executable",
-	command = "/home/horaoen/Dev/cpptools-linux/extension/debugAdapters/bin/OpenDebugAD7",
+	command = vim.fn.getenv("HOME") .. "/Dev/cpptools-linux/extension/debugAdapters/bin/OpenDebugAD7"
 }
 
 dap.configurations.cpp = {

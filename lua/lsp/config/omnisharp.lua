@@ -1,5 +1,5 @@
 local pid = vim.fn.getpid()
-local omnisharp_bin ="/home/horaoen/.local/share/nvim/lsp_servers/omnisharp/omnisharp/OmniSharp"
+local omnisharp_bin = vim.fn.getenv("HOME") .. "/.local/share/nvim/lsp_servers/omnisharp/omnisharp/OmniSharp"
 
 local opts = {
 	capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities()),
