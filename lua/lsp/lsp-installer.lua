@@ -3,7 +3,7 @@ local path = require("utils.path")
 require("nvim-lsp-installer").setup({
   ensure_installed = require("utils.servers"),
 
-  automatic_installation = false,
+  automatic_installation = true,
 
   ui = {
     check_outdated_servers_on_open = true,
