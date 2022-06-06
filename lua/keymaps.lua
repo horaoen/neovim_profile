@@ -145,13 +145,6 @@ keymap("n", "<leader>F", "<cmd>Telescope live_grep theme=ivy<cr>", opts)
 keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts)
 keymap("n", "<leader>ff", "<cmd>NvimTreeFindFile<CR>", opts)
 
--- packer
-keymap("n", "<leader>pc", "<cmd>PackerCompile<cr>", opts)
-keymap("n", "<leader>pi", "<cmd>PackerInstall<cr>", opts)
-keymap("n", "<leader>ps", "<cmd>PackerSync<cr>", opts)
-keymap("n", "<leader>pS", "<cmd>PackerStatus<cr>", opts)
-keymap("n", "<leader>pu", "<cmd>PackerUpdate<cr>", opts)
-
 -- lsp
 pluginKeys.mapLSP = function(mapbuf)
 	mapbuf("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", opts)
