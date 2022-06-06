@@ -30,7 +30,7 @@ require("nvim-lsp-setup").setup({
 
         html = {},
 
-        jsonls = {},
+        jsonls = require("lsp.config.jsonls"),
 
         omnisharp = require("lsp.config.omnisharp"),
 
