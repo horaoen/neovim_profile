@@ -1,3 +1,0 @@
-
-opts = {}
-return opts
