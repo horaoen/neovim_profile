@@ -1,14 +1,15 @@
 local servers = {
-  "cssls",
-  "emmet_ls",
-  "html",
-  "jsonls",
-  "omnisharp",
-  "pyright",
-  "rust_analyzer",
-  "sumneko_lua",
-  "tsserver",
-  "vuels",
+    "cssls",
+    "emmet_ls",
+    "html",
+    "jsonls",
+    "omnisharp",
+    "pyright",
+    "rust_analyzer",
+    "sumneko_lua",
+    "tsserver",
+    "vuels",
+    "sqls",
 }
 
 return servers
