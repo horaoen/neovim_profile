@@ -7,7 +7,7 @@ Example:
   => "/foo/bar"
 ]]
 path.join = function(...)
-  return table.concat(vim.tbl_flatten({ ... }), "/")
+    return table.concat(vim.tbl_flatten({ ... }), "/")
 end
 
 --[[
@@ -17,7 +17,7 @@ Example:
     => true
 ]]
 path.is_exists = function(p)
-  return vim.fn.filereadable(p) == 1
+    return vim.fn.filereadable(p) == 1
 end
 
 return path

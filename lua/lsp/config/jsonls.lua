@@ -1,9 +1,9 @@
 local opts = {
-  settings = {
-    json = {
-      schemas = require("schemastore").json.schemas(),
+    settings = {
+        json = {
+            schemas = require("schemastore").json.schemas(),
+        },
     },
-  },
 }
 
 return opts
