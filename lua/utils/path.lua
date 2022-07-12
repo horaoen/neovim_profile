@@ -4,7 +4,7 @@ local path = {}
 Join paths together.
 Example:
   utils.path.join("/foo", "bar")
-  => "/foo/bar"
+=> "/foo/bar"
 ]]
 path.join = function(...)
     return table.concat(vim.tbl_flatten({ ... }), "/")

@@ -1,5 +1,7 @@
 local status_ok, alpha = pcall(require, "alpha")
+local notfound = require("utils.notfound")
 if not status_ok then
+    vim.cmd([[PackerSync]])
     return
 end
 
