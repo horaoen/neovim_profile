@@ -143,11 +143,12 @@ keymap("n", "<leader>F", "<cmd>Telescope live_grep theme=ivy<cr>", opts)
 -- nvim-tree
 keymap("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", opts)
 keymap("n", "<leader>ff", "<cmd>NvimTreeFindFile<CR>", opts)
+require("nvim-lsp-setup.utils")
 
 pluginKeys.lspMaping = {
     ["<leader>rn"] = "Lspsaga rename",
     ["<leader>ca"] = "Lspsaga code_action",
-    ["<leader>lf"] = "lua vim.lsp.buf.format()",
+    ["<leader>lf"] = "lua vim.lsp.buf.formatting()",
     ["<leader>df"] = "Lspsaga show_line_diagnostics",
     ["<C-k>"] = "lua vim.lsp.buf.signature_help()",
     gd = "lua vim.lsp.buf.definition()",
