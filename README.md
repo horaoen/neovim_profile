@@ -32,9 +32,6 @@ git clone https://github.com/horaoen/neovim_profile.git ~/.config/nvim
 - python
 - c/c++、rust
 
-## other
-
-- makdown preview
 
 # 如何自定义
 
